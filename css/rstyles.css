@@ -75,16 +75,23 @@ body {
 
 form label {
 	float: left;
-	display: inline-block;
+	display: block-inline;
 	color: white;
 	font-family: 'Karma', serif;
 	margin-right: 0.5em
 }
+
 form input {
 	display: block;
 	margin-bottom: 0.5em;
 	
 }
+
+.col-md-12 {
+	margin-right: 0.1em;
+	display: inline;
+}
+
 form select {
 	display: block;
 	margin-bottom: 0.5em;
@@ -119,6 +126,23 @@ footer {
 
 #mobiletel {
 	display: none;
+}
+
+#location {
+	display: none;
+	margin-top: 1em;
+}
+ 
+input[type=radio]{
+	display: inline;
+	color: white;
+	font-family: 'karma' serif;
+	float: left;
+	margin-right: .5em;
+}
+
+.btn {
+	margin-top: 2em;
 }
 
 /* Styling for the Tablet Viewport Media Query */
