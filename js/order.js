@@ -5,9 +5,14 @@ function submitInfo () {
 	var email=document.getElementById("lName");
 	var phone=document.getElementById("phone");
 	var order=document.getElementById("order");
-	(name.value&&email.value&&phone.value&&order.value)?alert("Thanks for your order, we'll get to cooking it right away!") : alert("Looks like you're missing some information needed to complete the order.");
+	if (name.value&&email.value&&phone.value&&order.value) {
+		alert("Thanks for your order, we'll get to cooking it right away!");
+	} else {
+		alert("Looks like you're missing some information needed to complete the order.");
+	}
 }
 	document.getElementById("submit").addEventListener("click", submitInfo, false); 
+
 
 function hideAddress () {
 	var delivery = document.getElementById("delivery");
